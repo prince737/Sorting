@@ -26,8 +26,8 @@ def mergeSort(arr):
 		return
 	n = len(arr)
 	mid = int(n/2)
-	left = [None] * mid
-	right = [None] * (n-mid)
+	left = []
+	right = []
 	left = [arr[i] for i in range(0,mid)]
 	right = [arr[i] for i in range(mid,n)]
 	mergeSort(left)
